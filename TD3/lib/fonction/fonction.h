@@ -8,22 +8,13 @@
 
 
 void exo1();
-
-typedef struct Resdiv{
-   int Q; // Quotient
-   int R; // Reste 
-} Resdiv;
-
-Resdiv euclide(int x, int y);
-
-typedef enum{
-   paire,
-   impair
-}partie;
+int compteur();
 
 void exo2();
-void affiche(partie p, int N);
+int euclidienl(int x, int y, int* Q, int* R );
 
+void exo3();
+void invert_var(int* a, int* b);
 
 
 #endif
