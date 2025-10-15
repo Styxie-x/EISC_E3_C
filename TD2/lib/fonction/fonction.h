@@ -16,4 +16,14 @@ typedef struct Resdiv{
 
 Resdiv euclide(int x, int y);
 
+typedef enum{
+   paire,
+   impair
+}partie;
+
+void exo2();
+void affiche(partie p, int N);
+
+
+
 #endif

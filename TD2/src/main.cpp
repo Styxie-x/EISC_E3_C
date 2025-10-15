@@ -18,6 +18,8 @@ int main() {
   
   printf("TD2 !\n");
   exo1();
+
+  exo2();
   // while (1) {    }
   return 0;
 }
