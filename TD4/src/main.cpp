@@ -18,9 +18,10 @@ int main() {
   printf("------------TD3------------\n\n");
   // exo1();
   // exo2();
-  //exo3();
-  //exo4();
-  exo5();
+  // exo3();
+  // exo4();
+  // exo5();
+  exo6();
   // while (1) {    }
   return 0;
 }

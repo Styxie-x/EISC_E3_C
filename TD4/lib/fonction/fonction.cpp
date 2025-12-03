@@ -125,3 +125,27 @@ int *create_double(const int* tab, int N){
     return d_tab;
 }
 
+
+void exo6(){
+    printf("\n exo6 \n");
+    float tab1[5] = {0.3, 0.7, 1.2, 0.0, 2.7};
+    float tab2[3] = {0.1, 0.2, 0.3};
+    float* tab12 = concat(tab1, 5, tab2, 3);
+    printf("Concatenated table : ");
+    for(int i = 0; i< (5+3); i++){
+        printf("%.1f, ", tab12[i]);
+    }
+    printf("\n");
+}
+
+float * concat(float* tab1, int n1, float* tab2, int n2){
+    float *con_tab;
+    con_tab = (float* )malloc(sizeof(float)*(n1+n2));
+    for(uint8_t i = 0; i< n1; i++){
+        con_tab[i] = tab1[i];
+    }
+    for(uint8_t j = n1; j < n2+n1; j++){
+        con_tab[j] = tab2[j-n1];
+    }
+    return con_tab;
+}
